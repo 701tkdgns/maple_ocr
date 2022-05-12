@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <script src="scripts/clickPopUp.js"></script>
+    <link href="css/cover.css" rel="stylesheet">
+
+</head>
+<body class="d-flex flex-column h-100">
+    
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="window.location.reload()" style="cursor: pointer; color: white;">DQ</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container" id="dq_title">
+        <h1 id="homeTitle" class="mt-5">MapleStory DailyQuest</h1>
+        <p id="homeSubTitle" class="lead" style="color: darkslategrey;"> 최선의 일일퀘스트 선택지를 선정해 드립니다.
+        <code class="middle"> <p id="popupTxt" style="font-weight: bold"> 샘플 이미지와 같은 양식의 이미지를 올려주세요. 
+        <button id="popupBtn" onclick="showPopup();" style="color: white;"> ? </button> </p>  <!-- 팝업 버튼 -->
+      </code>
+       <form method="post" enctype="multipart/form-data" action='result.html'>       <!-- 이미지 올리는 버튼 -->
+
+        <div class="button">
+            <label id="chooseFile_btn" for="chooseFile">
+                CLICK
+            </label>
+        </div>
+        <input type="file" id="chooseFile" name="chooseFile" accept="image/*">
+      </div>
+      </form> <!--여기까지 이미지 올리는 버튼 -->
+
+      <div id="image-show"> <!-- 이미지 보이는 곳 -->
+      </div>
+      <script src="scripts/main.js"></script>
+    </main>    
+        <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      </body>
+</html>
